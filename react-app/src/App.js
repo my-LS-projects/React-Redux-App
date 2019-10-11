@@ -7,7 +7,12 @@ import CharacterList from './components/CharacterList';
 function App() {
   return (
     <div className='App'>
-      <CharacterList />
+      <header>
+        <h1>Breaking Bad React App</h1>
+      </header>
+      <main>
+        <CharacterList />
+      </main>
     </div>
   );
 }
