@@ -1,19 +1,23 @@
 import React from 'react'
 
 
-const CharacterCard = props => {
+const CharacterCard =  ( { name, key, status, nickname, img } ) => {
     return (
         <div className='character-card'>
-            <img src='' alt='character'></img>
-            <h2>Character Name</h2>
+            {/* {console.log('CARD PROPS: ', props)} */}
+            <img src={`${img}`} alt={`${name}`} className='character-image'></img>
+            <h2>{name}</h2>
             <ul>
-                <li>Occupation map here</li>
+                <li>Occupation:</li>
             </ul>
-            <p>status: </p>
-            <p>nickname: </p>
+            <p>Status: {status} </p>
+            <p>Nickname: "{nickname}"</p>
             <p>portrayed by: </p>
         </div>
     )
 }
+
+
+
 
 export default CharacterCard

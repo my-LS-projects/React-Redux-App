@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'react-redux'
 import { createStore , applyMiddleware } from 'redux'
-import rootReducer from './reducer/' 
+import rootReducer from './reducer' 
 // importing reducer as rootReducer because we exported as default, can give any name we want on import
 import thunk from 'redux-thunk'
 
