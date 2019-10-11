@@ -23,7 +23,9 @@ const CharacterList = props => {
             status={character.status} 
             nickname={character.nickname} 
             key={character.char_id} 
-            img={character.img}/>)}
+            img={character.img}
+            portrayed={character.portrayed}
+            />)}
         </>
     )
 }
